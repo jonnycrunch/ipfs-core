@@ -18,7 +18,8 @@ if(typeof process.env.DOMAIN_KEY !== "undefined"){
 }
 
 const node = new IPFS({
-  repo: path.join(os.tmpdir() + '/' + new Date().toString()),
+  // repo: path.join(os.tmpdir() + '/' + new Date().toString()),
+  repo: "/tmp/ipfs-docker-data/data/ipfs",
   init: {
     emptyRepo: true,
     bits: 2048
