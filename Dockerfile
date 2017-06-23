@@ -1,5 +1,7 @@
-FROM node:4.2.2
+FROM node:5
 MAINTAINER Computes <info@computes.io>
+
+EXPOSE 4001-4003
 
 ENV PATH $PATH:/usr/local/bin
 
